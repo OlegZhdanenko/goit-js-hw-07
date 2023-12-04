@@ -14,8 +14,10 @@ body {
 }
 .gallery{
   display: flex;
- flex-direction: column;
+  justify-content: center;
+ gap: 20px;
  align-items: center;
+ flex-wrap: wrap;
 
 }
 ul{
@@ -23,13 +25,11 @@ ul{
 }
 img{
   width: 500px;
-    margin-top: 50px;
+    height: 350px;
+    
+  
 }
-/* .box-list{
-  display: inline;
-  width: 30px;
-  height: 30px;
-} */
+
 #boxes{
   display: flex;
   gap: 10px;
