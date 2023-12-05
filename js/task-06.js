@@ -21,6 +21,7 @@ function onCreateBtn(event) {
 }
 
 function onDestroyBtn(event) {
+  input.value = '';
 destroyBoxes(event)
 }
 
@@ -41,7 +42,8 @@ function createBoxes(amount) {
   };
 
 function destroyBoxes(){
-   boxes.innerHTML=''
+  boxes.innerHTML = ''
+ 
  }
 
 

@@ -3,13 +3,12 @@ const span = document.querySelector("#name-output");
 const defaultName = span.textContent;
 
 input.addEventListener("input", (event) => {
-    const inputName = event.currentTarget.value
-    inputName.trim()
-    if (!inputName.includes(" ")) {
-     span.textContent = inputName;
+    const inputName = event.currentTarget.value.trim();
+
+    if (inputName==="") {
+        span.textContent = defaultName;
     } else {
-     span.textContent= defaultName
-      
+     span.textContent = inputName;
     }
 });
 
